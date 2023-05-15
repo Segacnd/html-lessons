@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/x-icon" href="./assets/favicon-16x16.png" />
+		<title>Second step</title>
+	</head>
+	<body
+		style="
+			font-size: 18px;
+			width: 80%;
+			margin-inline: auto;
+			color: #adbac7;
+			background-color: #22272e;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial,
+				sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+		"
+	>
+		<h1 style="text-align: center">
+			После такой удачной работы, предлагаю поговорить о том, что такое тег.
+		</h1>
+		<p>
+			Тэг - это такой HTML элемент, текст, содержащийся между начальным и конечным тегом,
+			отображается и размещается в соответствии со свойствами, указанными в начальном теге.
+		</p>
+		<ul style="color: #c8d1da">
+			<li>
+				Из определения выше делаем вывод, что у тегов могут быть свойства, которые мы можем указать
+				в начальном теге.
+			</li>
+			<li>
+				Стоит так же отметить, что многие теги, имеют свою стилизацию, характерную только
+				определенному тегу, однаго есть ряд тегов, которые в базовом представлении никак не
+				видоизменяют текст, вложенный в них.
+			</li>
+		</ul>
+		<hr style="width: 90%; border: 1px solid #adbac765" />
+		<h3 style="text-align: center">Предлагаю посмотреть на практике, как это работает</h3>
+		<p>
+			Давайте напишем пару тегов, и поместим в них текст, а после, в браузере посмотрим на различия
+		</p>
+		<p>
+			Попробуйте очистить текст написанный в предыдущем уроке и поместить в тег "body" вот эти теги
+			<img
+				width="500px"
+				style="margin-inline: auto; margin-top: 20px; display: block"
+				src="./assets/base_tags.jpg"
+				alt="базовые теги"
+			/>
+		</p>
+		<p>
+			Запустите уже известной вам командой код и посмотрите на результат. Думаю, даже невооруженным
+			глазом заметна разница в визуальном представлении разных тегов. Разные теги, могут помочь
+			правильно описать и разместить элементы на странице. <br />
+			<br />
+			Вы уже заметили, что два тега span в браузере разместились в строку в отличии от остальных
+			тегов?
+		</p>
+		<h2>А что если я хочу разделить содержимое внутри тега надвое и показать на разных строках?</h2>
+		<p>
+			Попробуйте просто установить курсор мыши между содержимым тега и нажать enter. <br />
+			<br />
+			Как вы могли заметить - ничего не произошло.
+		</p>
+
+		<ul style="color: #c8d1da">
+			<li>
+				Все дело в том, что если мы хотим осуществить перенос строки, нам нужно воспользоваться в
+				нужном месте специальным тегом br.
+			</li>
+			<img
+				width="500px"
+				style="margin-inline: auto; margin-block: 20px; display: block"
+				src="./assets/br-tag.jpg"
+				alt="тэг переноса строки"
+			/>
+			<li>
+				Ваш острый взгляд мог упасть на одну важную деталь - не все теги парные. Т.е не все теги
+				имеют закрывающего их брата.
+			</li>
+			<li>Такие теги называются - <span style="font-weight: 700">одиночными</span></li>
+		</ul>
+		<hr style="width: 90%; border: 1px solid #adbac765" />
+		<p>
+			Хорошо, вот мы немного узнали о базовых тегах, но что если я хочу показать картинку на своем
+			сайте? <br />
+			<br />
+			<span style="font-size: 20px; font-weight: 700"> Представляю вашему вниманию тег "img" </span>
+			<img
+				width="500px"
+				style="margin-inline: auto; margin-block: 20px; display: block"
+				src="./assets/img-tag.jpg"
+				alt="тэг картинка"
+			/>
+			Внутри данного тега мы можем увидеть два "атрибута" <br />
+			src и alt
+		</p>
+		<ul style="color: #c8d1da">
+			<li>
+				Внутри атрибута
+				<a style="color: #ffffffe7" target="_blank" href="http://htmlbook.ru/html/iframe/src"
+					>src</a
+				>
+				мы вставляем ссылку на изображение. Это может быть как локальный адрес на нашем компьютере,
+				так и ссылка на изображение из интернета
+			</li>
+
+			<li>
+				В атрибуте
+				<a style="color: #ffffffe7" target="_blank" href="http://htmlbook.ru/html/img/alt">alt</a> у
+				нас будет лежать альтернативный текст для изображения. В случае, если картинка не будет
+				загружена пользователь увидет этот текст.
+			</li>
+		</ul>
+		<hr style="width: 90%; border: 1px solid #adbac765" />
+		<h3>Вы так же могли обратить внимание, что я переодически делаю из текста ссылки.</h3>
+		<p>
+			Давайте вместе рассмотрим тег ссылку. Представляю вашему вниманию тэг
+			<a style="color: #ffffffe7" href="http://htmlbook.ru/html/a">a</a>.
+		</p>
+		<img
+			width="500px"
+			style="margin-inline: auto; margin-block: 20px; display: block"
+			src="./assets/a-tag.jpg"
+			alt="тэг переноса строки"
+		/>
+
+		<ul style="color: #c8d1da">
+			<li>
+				Как вы могли заметить у тега a есть атрибут
+				<a style="color: #ffffffe7" href="http://htmlbook.ru/html/a/href">href</a>. В него мы
+				вставляем ссылку на сайт, на который хотим перейти.
+			</li>
+
+			<li>
+				Советую так же ознакомится вот с
+				<a style="color: #ffffffe7" href="http://htmlbook.ru/html/a/target"
+					>этим атрибутом для тэга a</a
+				>
+			</li>
+		</ul>
+		<hr style="width: 90%; border: 1px solid #adbac765" />
+
+		<p>
+			По моему скромному мнению, самостоятельная практика - лучший двигатель обучения. По этому я
+			порекомендовал бы вам самостоятельно поработать
+			<a
+				style="color: #ffffffe7"
+				href="http://htmlbook.ru/samhtml/tipy-tegov/tegi-dlya-spiskov#:~:text=%D0%A1%D0%BF%D0%B8%D1%81%D0%BA%D0%BE%D0%BC%20%D0%BD%D0%B0%D0%B7%D1%8B%D0%B2%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D0%B2%D0%B7%D0%B0%D0%B8%D0%BC%D0%BE%D1%81%D0%B2%D1%8F%D0%B7%D0%B0%D0%BD%D0%BD%D1%8B%D0%B9%20%D0%BD%D0%B0%D0%B1%D0%BE%D1%80%20%D0%BE%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D1%85,%D0%B8%20%D1%83%D0%B4%D0%BE%D0%B1%D0%BD%D0%BE%D0%BC%20%D0%B4%D0%BB%D1%8F%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8F%20%D0%B2%D0%B8%D0%B4%D0%B5."
+				>вот с этими тегами</a
+			>. Я уверен, у вас все получится!
+		</p>
+
+		<hr style="width: 90%; border: 1px solid #adbac765" />
+		<h2 style="text-align: center">Вы большой молодец! На этом второй урок закончен.</h2>
+		<div style="width: 100%">
+			<a
+				target="_blank"
+				href="https://github.com/Segacnd"
+				style="
+					text-decoration: none;
+					cursor: pointer;
+					width: 260px;
+					height: 50px;
+					background-color: #4f46e5;
+					color: #fff;
+					border-radius: 14px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					border: none;
+					margin: 20px auto;
+				"
+				>Назад, ко всем урокам
+			</a>
+		</div>
+		<hr style="width: 90%; border: 1px solid #adbac765" />
+	</body>
+</html>
