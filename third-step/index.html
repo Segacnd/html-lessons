@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" type="image/x-icon" href="./assets/favicon-16x16.png" />
+		<title>Third step</title>
+	</head>
+	<body
+		style="
+			font-size: 18px;
+			width: 80%;
+			margin-inline: auto;
+			color: #adbac7;
+			background-color: #22272e;
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial,
+				sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+		"
+	>
+		<h1 style="text-align: center">Итак, давайте обсудим пару вопросов</h1>
+		<p>
+			Мы научились писать заголовки и параграфы, отправлять пользователя по ссылкам, показывать ему
+			изображения и писать списки. Но у вас могло остаться пара вопросов.
+		</p>
+
+		<p>
+			Очень важно понять что теги - это инструменты, и довольно гибкие. Мы можем вкладывать теги
+			друг в друга, на пример мы можем в тег a вложить изображение. И когда пользователь нажмет на
+			изображение его перенаправит на заданый вами сайт.
+		</p>
+
+		<p>
+			Мы так же можем создать локально новую страницу, указать путь до нее в атрибуте href и
+			отправится по клику на нее.
+		</p>
+		<hr style="width: 90%; border: 1px solid #adbac765" />
+		<h3>Так же важно помнить о том, что все теги можно разделить на "семантические" и нет.</h3>
+		<ul>
+			<li>Семантическим будет называться тег, который несет какой то смысл.</li>
+			<p>На пример тег "header" - шапка, или тег "aside" - контент сбоку страницы.</p>
+			<li>
+				И наоборот, такие теги как div - являются просто контейнерами, смысловой нагрузки в них нет.
+			</li>
+		</ul>
+		<h3>
+			Важно понимать, что любой хороший разработчик стремится использовать семантические теги для
+			оформления страницы.
+		</h3>
+		<hr style="width: 90%; border: 1px solid #adbac765" />
+		<h2 style="text-align: center">Но где мне узнать какие теги являются семантическими?</h2>
+
+		<a
+			target="_blank"
+			style="color: #ffffffe7"
+			href="https://ru.w3docs.com/uchebnik-html/semanticheskie-elementy-html5.html"
+		>
+			В этой статье собраны основные семантические теги, советую попробовать написать их у себя на
+			странице</a
+		>
+
+		<p>
+			Существует базовый шаблон страницы, однако стоит помнить, програмирование гибкое. От задачи к
+			задачи все может менятся в зависимости от желаний заказчика, дизайнера или ваших собственных.
+			Неизменно будет одно - смысловая нагрузка, для используемых вами тегов.
+			<img
+				title="базовый шаблон HTML"
+				width="500px"
+				style="margin-inline: auto; margin-top: 20px; display: block"
+				src="./assets/base-template.jpg"
+				alt="базовый шаблон"
+			/>
+		</p>
+
+		<p>
+			В этой статье так же хотел бы вас познакомить, с очень полезным атрибутом "title". Этот
+			атрибут позволяет создать подсказку, которую сможет увидеть пользователь, наведя на элемент.
+			Вы можете понять принцип его работы наведя на картинку выше.
+			<img
+				title="это синтаксис"
+				width="500px"
+				style="margin-inline: auto; margin-top: 20px; display: block"
+				src="./assets/title-code.jpg"
+				alt="базовый шаблон"
+			/>
+		</p>
+		<hr style="width: 90%; border: 1px solid #adbac765" />
+		<h2 style="text-align: center">Важный нюанс</h2>
+
+		<p>
+			Да, мы можем вкладывать теги друг в друга, но стоит помнить, что есть теги
+			<a
+				target="_blank"
+				style="color: #ffffffe7"
+				href="http://htmlbook.ru/samlayout/blochnaya-verstka/strochnye-elementy"
+				>строчные</a
+			>
+			и
+			<a
+				target="_blank"
+				style="color: #ffffffe7"
+				href="http://htmlbook.ru/samlayout/blochnaya-verstka/blochnye-elementy"
+				>блочные</a
+			>
+			. Перейдя по соответствующим ссылкам и озанкомившись с документацией, думаю вы и сами поняли,
+			мы не будем класть в тег span блочные теги. На то есть пара причин
+		</p>
+		<ul>
+			<li>
+				Важно что строчным элементом мы не можем управлять как блочным, это может создать проблемы.
+			</li>
+			<li>Вкладывание блочных элементов в строчные является грубой семантической ошибкой.</li>
+		</ul>
+
+		<h3>
+			Я хотел бы так же отметить, что с помощью стилей мы можем поменять свойство "display" у тега,
+			которое и говорит нам, строчный это элемент или блочный, однако все равно, стоит
+			придерживаться семантических правил. Хотя всегда будут исключения.
+		</h3>
+		<hr style="width: 90%; border: 1px solid #adbac765" />
+		<p>
+			Советую в свободное время самостоятельно разобрать теги
+			<a target="_blank" style="color: #ffffffe7" href="http://htmlbook.ru/html/input">Input</a> и
+			<a target="_blank" style="color: #ffffffe7" href="http://htmlbook.ru/html/button">Button</a>
+		</p>
+
+		<a
+			target="_blank"
+			href="https://github.com/Segacnd/html-lessons"
+			style="
+				text-decoration: none;
+				cursor: pointer;
+				width: 260px;
+				height: 50px;
+				background-color: #4f46e5;
+				color: #fff;
+				border-radius: 14px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				border: none;
+				margin: 20px auto;
+			"
+			>Назад, ко всем урокам
+		</a>
+	</body>
+</html>
